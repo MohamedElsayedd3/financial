@@ -1,76 +1,148 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2563eb;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #1e40af;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 15px;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — Financial</title>
+<meta name="description" content="Privacy Policy for the Financial calculator app">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#128176;</text></svg>">
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --fg:#1f2430; --muted:#5b6472;
+    --line:#e3e6ec; --accent:#0f766e;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f1216; --card:#181c22; --fg:#e8eaed; --muted:#a2abb8; --line:#2a3038; --accent:#2dd4bf; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:24px 16px 64px; background:var(--bg); color:var(--fg);
+    font-family:"Cairo","Segoe UI",Tahoma,system-ui,-apple-system,sans-serif;
+    line-height:1.85; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:820px; margin:0 auto}
+  header{position:relative; margin-bottom:22px}
+  h1{font-size:1.75rem; font-weight:800; margin:0 0 6px; letter-spacing:-.01em}
+  .meta{color:var(--muted); font-size:.9rem; margin:0}
+  .lang{
+    position:absolute; inset-inline-end:0; top:0;
+    background:var(--card); color:var(--fg); border:1px solid var(--line);
+    border-radius:999px; padding:8px 18px; font:inherit; font-size:.9rem;
+    font-weight:700; cursor:pointer;
+  }
+  .lang:hover{ border-color:var(--accent); color:var(--accent) }
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:26px 28px;
+  }
+  section{ margin:0 0 26px }
+  section:last-of-type{ margin-bottom:0 }
+  h2{font-size:1.08rem; font-weight:800; margin:0 0 8px; color:var(--accent)}
+  p{ margin:0; font-size:.98rem }
+  a{ color:var(--accent) }
+  @media print{
+    body{ background:#fff; padding:0 }
+    .lang{ display:none }
+    .card{ border-color:#ccc }
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-    <div class="container">
-        <h1>سياسة الخصوصية</h1>
+<header>
+  <button class="lang" onclick="setLang(document.documentElement.lang==='ar'?'en':'ar')">English</button>
+  <h1 data-lang="ar">سياسة الخصوصية</h1>
+  <h1 data-lang="en" style="display:none">Privacy Policy</h1>
+  <p class="meta" data-lang="ar">تطبيق Financial — حاسبات مالية&nbsp;· آخر تحديث: 2 أكتوبر 2026</p>
+  <p class="meta" data-lang="en" style="display:none">The Financial app — financial calculators &nbsp;· Last updated: October 2, 2026</p>
+</header>
 
-        <h2>1. مقدمة</h2>
-        <p>نحن في تطبيقنا المالي نولي اهتماماً كبيراً لخصوصية مستخدمينا. تهدف سياسة الخصوصية هذه إلى توضيح كيفية جمع واستخدام وحماية البيانات الشخصية والمالية الخاصة بك عند استخدامك للتطبيق. باستخدامك لهذا التطبيق، فإنك توافق على الممارسات الموضحة في هذه الوثيقة.</p>
+<div class="card">
 
-        <h2>2. جمع البيانات واستخدامها</h2>
-        <p>البيانات المالية التي تقوم بإدخالها في التطبيق (مثل الفواتير، القيود اليومية، العملاء، الموردين) يتم حفظها محلياً على جهازك ولا يتم إرسالها إلى خوادم خارجية إلا إذا قمت بعمل نسخة احتياطية سحابية بناءً على طلبك. نستخدم معرفات غير شخصية لتحسين أداء التطبيق وعرض الإعلانات المناسبة (عبر Google AdMob) إذا كانت مفعلة.</p>
+  <!-- ================= ARABIC ================= -->
+  <div data-lang="ar">
 
-        <h2>3. الإعلانات والجهات الخارجية</h2>
-        <p>يستخدم التطبيق خدمات جهات خارجية مثل Google AdMob لعرض الإعلانات. قد تقوم هذه الجهات بجمع معلومات غير شخصية أو استخدام ملفات تعريف الارتباط (Cookies) ومعرفات الأجهزة لتخصيص الإعلانات وتحسين تجربة المستخدم. يمكنك مراجعة سياسة خصوصية Google لمعرفة المزيد حول كيفية معالجتهم للبيانات.</p>
+    <section>
+      <h2>1. مقدمة</h2>
+      <p>نحن في تطبيق <strong>Financial</strong> نولي اهتماماً كبيراً لخصوصية مستخدمينا. توضح هذه السياسة كيفية التعامل مع البيانات عند استخدامك للتطبيق. باستخدامك للتطبيق فإنك توافق على الممارسات الموضحة في هذه الوثيقة.</p>
+    </section>
 
-        <h2>4. الأذونات المطلوبة</h2>
-        <p>قد يطلب التطبيق بعض الأذونات ليعمل بشكل صحيح، مثل إذن الوصول إلى الإنترنت لعرض الإعلانات وجلب التحديثات، بالإضافة إلى إذن حفظ الملفات لتصدير التقارير (مثل PDF و Excel). لا يتم استخدام هذه الأذونات لأي أغراض أخرى تتعدى وظائف التطبيق الأساسية.</p>
+    <section>
+      <h2>2. البيانات التي تُدخلها</h2>
+      <p>كل الأرقام والبيانات التي تُدخلها في الحاسبات (مبالغ القروض، الورثة، الأصول الزكوية، الرواتب) تُعالج محلياً على جهازك ولا تُرسل إلى أي خادم خارجي. لا نحتفظ بها ولا نشاركها مع أي طرف.</p>
+    </section>
 
-        <h2>5. أمن البيانات</h2>
-        <p>نحن نتخذ إجراءات أمنية صارمة لحماية بياناتك من الوصول غير المصرح به أو التعديل أو الإفصاح أو الإتلاف. ومع ذلك، يرجى ملاحظة أنه لا توجد وسيلة نقل عبر الإنترنت أو طريقة تخزين إلكتروني آمنة بنسبة 100%، لذا ننصحك دائماً بالاحتفاظ بنسخ احتياطية دورية لبياناتك محلياً.</p>
+    <section>
+      <h2>3. الإعلانات والجهات الخارجية</h2>
+      <p>يستخدم التطبيق خدمات جهات خارجية مثل <strong>Google AdMob</strong> لعرض الإعلانات. قد تجمع هذه الجهات معلومات غير شخصية أو تستخدم معرفات الأجهزة لتخصيص الإعلانات. يمكنك مراجعة <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">سياسة خصوصية Google</a> لمعرفة المزيد.</p>
+    </section>
 
-        <h2>6. التغييرات على سياسة الخصوصية</h2>
-        <p>قد نقوم بتحديث سياسة الخصوصية من حين لآخر لتعكس التغييرات في ممارساتنا أو للأسباب التنظيمية والقانونية. سيتم إشعارك بأي تغييرات جوهرية من خلال التطبيق، وننصحك بمراجعة هذه الصفحة بشكل دوري للوقوف على أحدث التحديثات.</p>
+    <section>
+      <h2>4. الأذونات المطلوبة</h2>
+      <p>يطلب التطبيق <strong>إذن الإنترنت فقط</strong> (Internet) لعرض الإعلانات. لا يطلب التطبيق أي أذونات أخرى — لا تخزين، ولا كاميرا، ولا ميكروفون، ولا موقع، ولا جهات اتصال.</p>
+    </section>
 
-        <h2>7. اتصل بنا</h2>
-        <p>إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية، يرجى التواصل معنا عبر وسائل الاتصال المتاحة في ملف الشركة أو عبر البريد الإلكتروني المخصص للدعم الفني.</p>
-    </div>
+    <section>
+      <h2>5. أمن البيانات</h2>
+      <p>لا يملك التطبيق خادماً ولا حسابات مستخدمين، ولا يُرسَل أي رقم تكتبه إلى الإنترنت. كل الحسابات تُنفَّذ بالكامل على جهازك، والإعدادات المحفوظة تبقى محلياً وتُمسح كلياً عند حذف بيانات التطبيق أو إعادة تثبيته.</p>
+    </section>
+<section>
+      <h2>6. التغييرات على السياسة</h2>
+      <p>قد نحدّث سياسة الخصوصية من وقت لآخر. سيتم إشعارك بأي تغييرات جوهرية من خلال التطبيق، وننصحك بمراجعة هذه الصفحة دورياً.</p>
+    </section>
 
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div data-lang="en" style="display:none">
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>At <strong>Financial</strong> we care deeply about your privacy. This policy explains how data is handled when you use the app. By using the app you agree to the practices described here.</p>
+    </section>
+
+    <section>
+      <h2>2. Data you enter</h2>
+      <p>All numbers and data you enter in the calculators (loan amounts, heirs, zakat assets, salaries) are processed locally on your device and are never sent to any server. We do not store or share them.</p>
+    </section>
+
+    <section>
+      <h2>3. Ads and third parties</h2>
+      <p>The app uses third-party services such as <strong>Google AdMob</strong> to display ads. These may collect non-personal information or use device identifiers to personalise ads. See Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a> for more.</p>
+    </section>
+
+    <section>
+      <h2>4. Required permissions</h2>
+      <p>The app requests <strong>internet access only</strong>, in order to display ads. It requests no other permissions — no storage, camera, microphone, location, or contacts.</p>
+    </section>
+
+    <section>
+      <h2>5. Data security</h2>
+      <p>The app has no server and no user accounts, and none of the numbers you enter are sent over the internet. Every calculation runs entirely on your device, and saved settings stay local and are erased completely when you clear the app's data or reinstall it.</p>
+    </section>
+
+    <section>
+      <h2>6. Policy changes</h2>
+      <p>We may update this privacy policy from time to time. You will be notified of material changes through the app, and we recommend reviewing this page periodically.</p>
+    </section>
+
+  </div>
+
+</div>
+
+</div>
+
+<script>
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.documentElement.dir  = (l === 'ar') ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.style.display = (el.dataset.lang === l) ? '' : 'none';
+    });
+    var btn = document.querySelector('.lang');
+    if (btn) btn.textContent = (l === 'ar') ? 'English' : 'العربية';
+  }
+</script>
 </body>
-  </html>
+</html>
